@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from spark.bootlab.io/pages-clients.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Feb 2022 15:52:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
+	<meta name="author" content="Bootlab">
+
+	<title>Agex - Tech test - Empleados</title>
+
+	<!-- PICK ONE OF THE STYLES BELOW -->
+	<!-- <link href="css/modern.css" rel="stylesheet"> -->
+	<!-- <link href="css/classic.css" rel="stylesheet"> -->
+	<!-- <link href="css/dark.css" rel="stylesheet"> -->
+	<!-- <link href="css/light.css" rel="stylesheet"> -->
+
+	<!-- BEGIN SETTINGS -->
+	<!-- You can remove this after picking a style -->
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<script src="js/settings.js"></script>
+	<!-- END SETTINGS -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="../www.googletagmanager.com/gtag/js702a?id=UA-120946860-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120946860-7');
+</script></head>
+
+<body>
+	<div class="splash active">
+		<div class="splash-icon"></div>
+	</div>
+
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<a class="sidebar-brand" href="index-2.html">
+				Agex - Tech test
+			</a>
+			<div class="sidebar-content">
+				<div class="sidebar-user">
+					<img src="img/avatars/avatar.jpg" class="img-fluid rounded-circle mb-2" alt="Default User" />
+					<div class="fw-bold">Default User</div>
+					<small>Front-end Developer</small>
+				</div>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Principal
+					</li>
+					<li class="sidebar-item active">
+						<a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle me-2 fas fa-fw fa-users"></i> <span class="align-middle">Empleados</span>
+						</a>
+						<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item active"><a class="sidebar-link" href="employees.html">Administración</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-theme">
+				<a class="sidebar-toggle d-flex me-2">
+					<i class="hamburger align-self-center"></i>
+				</a>
+			</nav>
+			<main class="content">
+				<div class="container-fluid">
+
+					<div class="header">
+						<h1 class="header-title">
+							Empleados
+						</h1>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="home.html">Inicio</a></li>
+								<li class="breadcrumb-item"><a href="#">Empleados</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Administración</li>
+							</ol>
+						</nav>
+					</div>
+					<div class="row">
+						<div class="col-xxl-12">
+							<div class="card mb-2">
+								<div class="card-body p-2">
+									<a href="form.html" class="btn btn-primary mb-0"><i class="fas fa-fw fa-user-plus"></i> Agregar nuevo</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xxl-9">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<a href="#" class="me-1">
+											<i class="align-middle" data-feather="refresh-cw"></i>
+										</a>
+										<div class="d-inline-block dropdown show">
+											<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+												<i class="align-middle" data-feather="more-vertical"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Empleados</h5>
+								</div>
+								<div class="card-body">
+									<table id="datatables-clients" class="table table-striped" style="width:100%">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Nombre completo</th>
+												<th>Genero</th>
+												<th>Estado civil</th>
+												<th>Fecha de nacimiento</th>
+												<th>Estado</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><img src="img/avatars/avatar.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Garrett Winters</td>
+												<td>M</td>
+												<td>Soltero</td>
+												<td>02/05/1986</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Ashton Cox</td>
+												<td>M</td>
+												<td>Soltero</td>
+												<td>21/06/1996</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Sonya Frost</td>
+												<td>F</td>
+												<td>SolterA</td>
+												<td>12/09/1990</td>
+												<td><span class="badge bg-danger">Eliminado</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Jena Gaines</td>
+												<td>F</td>
+												<td>SolterA</td>
+												<td>09/07/1989</td>
+												<td><span class="badge bg-warning">Inactivo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-2.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Quinn Flynn</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>24/02/1992</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-2.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Charde Marshall</td>
+												<td>M</td>
+												<td>Soltero</td>
+												<td>22/07/1995</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-2.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Haley Kennedy</td>
+												<td>M</td>
+												<td>Soltero</td>
+												<td>03/09/1992</td>
+												<td><span class="badge bg-danger">Eliminado</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-2.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Tatyana Fitzpatrick</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>05/08/1996</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-3.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Michael Silva</td>
+												<td>M</td>
+												<td>Soltero</td>
+												<td>25/03/1995</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-3.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Yuri Berry</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>30/08/1996</td>
+												<td><span class="badge bg-danger">Eliminado</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-3.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Doris Wilder</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>24/09/1997</td>
+												<td><span class="badge bg-warning">Inactivo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-3.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Angelica Ramos</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>09/04/1991</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-4.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Jennifer Chang</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>12/07/1992</td>
+												<td><span class="badge bg-warning">Inactivo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-4.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Brenden Wagner</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>29/11/1989</td>
+												<td><span class="badge bg-warning">Inactivo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-4.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Fiona Green</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>02/10/1993</td>
+												<td><span class="badge bg-warning">Inactivo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-4.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Suki Burks</td>
+												<td>M</td>
+												<td>Soltero</td>
+												<td>03/09/1991</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-5.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Prescott Bartlett</td>
+												<td>M</td>
+												<td>Soltero</td>
+												<td>28/03/1995</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-5.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Gavin Cortez</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>09/09/1987</td>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-5.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Unity Butler</td>
+												<td>F</td>
+												<td>Soltera</td>
+												<td>14/08/1988</td>
+												<td><span class="badge bg-warning">Inactivo</span></td>
+											</tr>
+											<tr>
+												<td><img src="img/avatars/avatar-5.jpg" width="32" height="32" class="rounded-circle my-n1" alt="Avatar"></td>
+												<td>Howard Hatfield</td>
+												<td>F</td>
+												<td>Soltero</td>
+												<td>08/06/1990</td>
+												<td><span class="badge bg-warning">Inactivo</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xxl-3">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-actions float-end">
+										<a href="#" class="me-1">
+											<i class="align-middle" data-feather="refresh-cw"></i>
+										</a>
+										<div class="d-inline-block dropdown show">
+											<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+												<i class="align-middle" data-feather="more-vertical"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-end">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+									</div>
+									<h5 class="card-title mb-0">Angelica Ramos</h5>
+								</div>
+								<div class="card-body">
+									<div class="row g-0">
+										<div class="col-sm-3 col-xl-12 col-xxl-4 text-center">
+											<img src="img/avatars/avatar-3.jpg" width="64" height="64" class="rounded-circle mt-2" alt="Angelica Ramos">
+										</div>
+										<div class="col-sm-9 col-xl-12 col-xxl-8">
+											<strong>Acerca de</strong>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+												sociis
+												natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										</div>
+									</div>
+
+									<table class="table table-sm my-2">
+										<tbody>
+											<tr>
+												<th>Nombre completo</th>
+												<td>Angelica Ramos</td>
+											</tr>
+											<tr>
+												<th>Genero</th>
+												<td>F</td>
+											</tr>
+											<tr>
+											<tr>
+												<th>Fecha nac.</th>
+												<td>09/04/1991</td>
+											</tr>
+											<tr>
+												<th>Puesto</th>
+												<td>Desktop publisher</td>
+											</tr>
+											<tr>
+												<th>Correo electrónico</th>
+												<td>charissahilt@rhyta.com</td>
+											</tr>
+											<tr>
+												<th>Telefono</th>
+												<td>+(502)33003300</td>
+											</tr>
+											<tr>
+												<th>DPI</th>
+												<td>1234567890101</td>
+											</tr>
+											<tr>
+												<th>NIT</th>
+												<td>12345-6</td>
+											</tr>
+											<tr>
+												<th>Dirección</th>
+												<td>Ciudad de Guatemala</td>
+											</tr>
+											<tr>
+												<th>Estado</th>
+												<td><span class="badge bg-success">Activo</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-12 text-end">
+							<p class="mb-0">
+								&copy; 2022 - <a href="home.html" class="text-muted">Agex - Tech test</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<svg width="0" height="0" style="position:absolute">
+		<defs>
+			<symbol viewBox="0 0 512 512" id="ion-ios-people">
+				<path
+					d="M448 273.001c-21.27 0-39.296 13.999-45.596 32.999h-38.857l-28.361-85.417a15.999 15.999 0 0 0-15.183-10.956c-.112 0-.224 0-.335.004a15.997 15.997 0 0 0-15.049 11.588l-44.484 155.262-52.353-314.108C206.535 54.893 200.333 48 192 48s-13.693 5.776-15.525 13.135L115.496 306H16v31.999h112c7.348 0 13.75-5.003 15.525-12.134l45.368-182.177 51.324 307.94c1.229 7.377 7.397 11.92 14.864 12.344.308.018.614.028.919.028 7.097 0 13.406-3.701 15.381-10.594l49.744-173.617 15.689 47.252A16.001 16.001 0 0 0 352 337.999h51.108C409.973 355.999 427.477 369 448 369c26.511 0 48-22.492 48-49 0-26.509-21.489-46.999-48-46.999z">
+				</path>
+			</symbol>
+		</defs>
+	</svg>
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Datatables clients
+			$("#datatables-clients").DataTable({
+				responsive: true,
+				order: [
+					[1, "asc"]
+				]
+			});
+		});
+	</script>
+</body>
+
+
+<!-- Mirrored from spark.bootlab.io/pages-clients.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 18 Feb 2022 15:52:32 GMT -->
+</html>
